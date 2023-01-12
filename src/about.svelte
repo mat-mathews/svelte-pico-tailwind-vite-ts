@@ -1,0 +1,127 @@
+<script lang="ts">
+  import "@picocss/pico";
+</script>
+
+
+<!-- Custom Styles for this example -->
+<style>
+.row-example {
+  margin-top: calc(var(--typography-spacing-vertical) * 2);
+  margin-bottom: calc(var(--typography-spacing-vertical) * 2);
+}
+.col-example {
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: var(--secondary);
+  color: var(--secondary-inverse);
+  text-align: center;
+}
+</style>
+
+
+
+<!-- Header -->
+<header class="container">
+  <hgroup>
+    <h1>Pico + Bootstrap grid system</h1>
+    <h2>Custom CSS build with the <a href="https://getbootstrap.com/docs/5.2/layout/grid/">Bootstrap grid system</a> to manage complex grid layouts in <a href="https://github.com/picocss/pico">Pico</a></h2>
+  </hgroup>
+  <nav>
+    <ul>
+      <li>
+        <details role="list">
+          <summary aria-haspopup="listbox" class="secondary">Theme</summary>
+          <ul role="listbox">
+            <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+            <li><a href="#" data-theme-switcher="light">Light</a></li>
+            <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details role="list">
+          <summary aria-haspopup="listbox">Examples</summary>
+          <ul role="listbox">
+            <li><a href="../preview/">Preview</a></li>
+            <li><a href="../preview-rtl/">Right-to-left</a></li>
+            <li><a href="../classless/">Class-less</a></li>
+            <li><a href="../basic-template/">Basic template</a></li>
+            <li><a href="../company/">Company</a></li>
+            <li><a href="../google-amp/">Google Amp</a></li>
+            <li><a href="../sign-in/">Sign in</a></li>
+            <li><a href="../bootstrap-grid/">Bootstrap grid</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
+</header><!-- ./ Header -->
+
+<!-- Main -->
+<main class="container">
+  <p>For this example, we have merged and compiled Pico design system with the Bootstrap grid system (<a href="https://github.com/picocss/examples/blob/master/bootstrap-grid/scss/pico-bootstrap-grid.scss">Source code here</a>).</p>
+  <p>
+    This allows to use the powerful Boostrap grid system to build layouts with:
+    <a href="https://getbootstrap.com/docs/5.2/layout/grid/#auto-layout-columns">Auto-columns</a>,
+    <a href="https://getbootstrap.com/docs/5.2/layout/grid/#responsive-classes">Responsive classes</a>,
+    <a href="https://getbootstrap.com/docs/5.2/layout/columns/#alignment">Alignment</a>,
+    <a href="https://getbootstrap.com/docs/5.2/layout/columns/#reordering">Reordering</a> and
+    <a href="https://getbootstrap.com/docs/5.2/layout/grid/#nesting">Nesting</a>.
+  </p>
+
+  <!-- Grid Bootstrap -->
+  <div class="row row-example">
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">1</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">2</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">3</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">4</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">5</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">6</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">7</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">8</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">9</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">10</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">11</div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div class="col-example">12</div>
+    </div>
+  </div><!-- ./ Grid Bootstrap -->
+
+  <p>This grid example displays:</p>
+  <ul>
+    <li>1 column on <strong>extra small</strong> devices <code>&lt;576px</code></li>
+    <li>2 columns on <strong>small</strong> devices <code>≥576px</code></li>
+    <li>3 columns on <strong>medium</strong> devices <code>≥768px</code></li>
+    <li>4 columns on <strong>large</strong> devices <code>≥992px</code></li>
+    <li>6 columns on <strong>extra large</strong> devices <code>≥1200px</code></li>
+  </ul>
+</main><!-- ./ Main -->
+
+<!-- Footer -->
+<footer class="container">
+  <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/blob/master/bootstrap-grid/">Source code</a></small>
+</footer><!-- ./ Footer -->
+
